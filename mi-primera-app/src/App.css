@@ -1,0 +1,19 @@
+.portada {
+ display: flex;
+ justify-content: center;}
+
+.perrosPeludos{ width: 50%;
+border: 20px rgb(204, 178, 178) solid;
+margin: 10%;}
+
+.title{
+color:rgb(204, 178, 178) ;
+border:solid rgb(189, 177, 177) 2px;
+padding: 5px;
+
+}
+.body
+{
+  background-image: url("../public/images/modelo-inconsútil-del-vector-con-huellas-perro-130299358.jpg");
+  background-repeat: repeat;
+}

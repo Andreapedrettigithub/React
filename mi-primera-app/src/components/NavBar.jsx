@@ -3,16 +3,18 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import CartWidget   from 'CartWidget';
 
 function BasicExample() {
   return (
+    <div className="body">
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#home"><CartWidget/></Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -29,34 +31,8 @@ function BasicExample() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  );
+ </div> );
 }
 
 export default BasicExample;
 
-/*
-export const NavBar = () => {
-    return(
-        <div className="container">
-            <nav className="nav">
-                <div className="nav__brand">
-                    <a className="nav__link" href="#">Mi tiendita online</a>
-                </div>
-                <ul className="nav__list">
-                    <li>
-                        <a className="nav__link" href="#">Categoria 1</a>
-                    </li>
-                    <li>
-                    <a className="nav__link" href="#">Categoria 2</a>
-                    </li>
-                    <li>
-                    <a className="nav__link" href="#">Carrito</a>
-                    </li>
-        
-                    
-                </ul>
-            </nav>
-        </div>
-      );
-}
-export default NavBar;*/
