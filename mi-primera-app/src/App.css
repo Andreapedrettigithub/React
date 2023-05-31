@@ -17,3 +17,8 @@ padding: 5px;
   background-image: url("../public/images/modelo-inconsútil-del-vector-con-huellas-perro-130299358.jpg");
   background-repeat: repeat;
 }
+
+.greeting{
+  color:lightcoral;
+  text-align: center;
+}
