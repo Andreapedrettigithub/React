@@ -22,3 +22,45 @@ padding: 5px;
   color:lightcoral;
   text-align: center;
 }
+.ListGroup {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.CardItem{ width: 200px; /* Ajusta el ancho según tus necesidades */
+  border: solid 2px rgb(204, 178, 178);
+  padding: 20px;
+  margin: 20px; 
+  border-radius: 10px;/* Espacio entre las tarjetas */
+}
+.Header { background-color: rgb(204, 178, 178);
+  text-align: center;
+  font-size: large;
+}
+.ItemImg{
+  width: 100px;
+  height: 60px;
+  margin:5%;
+}
+
+.Counter {
+  display:flex;
+ justify-content: center;
+ border: solid 5% rgb(204, 178, 178);
+ border-radius: 10px;
+}
+.Controls{
+  display:flex;
+  justify-items: center; 
+  margin-right: 5%;
+  margin-inline: 5%;
+ 
+}
+.Button{
+  border: 1px solid  rgb(204, 178, 178);
+  border-radius: 10px;
+  padding: 10px;
+}
+.Number {
+  margin:5px;
+}

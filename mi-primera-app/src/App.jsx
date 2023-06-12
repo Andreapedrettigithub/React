@@ -2,10 +2,12 @@ import React from 'react';
 import { Button, Navbar, Nav, Container } from 'react-bootstrap';
 import './App.css';
 import {CartWidget, CartWidget2 } from './components/CartWidget';
-
-import { ItemListContainer } from './components/ItemListContainer';
+import  ItemListContainer  from './components/ItemListContainer';
+import  ItemCount from './components/ItemCount/ItemCount';
+import Item from './components/Item/Item';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaw } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -29,10 +31,12 @@ import { faPaw } from '@fortawesome/free-solid-svg-icons';
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <ItemListContainer></ItemListContainer>
-     <div className='portada'> 
+       <div className='portada'> 
       <img className='perrosPeludos' src="../images/perrospeludos.jpg" alt="portada" />
       </div>
+      <ItemListContainer></ItemListContainer>
+      <ItemCount initial={1} stock={10} onAdd={(quantity)=> console.log('Cantidad agregada', quantity)}></ItemCount>
+    
       <div><p className='parrafo'>Todo lo que necesitas para tu mascota a solo un click</p></div>
     </div>
     </>
